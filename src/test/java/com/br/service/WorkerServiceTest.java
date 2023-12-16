@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import com.br.domain.Worker;
 
-public class WorkerServiceTest {
+class WorkerServiceTest {
 
     private WorkerService workerService = new WorkerService();
 
@@ -30,6 +30,6 @@ public class WorkerServiceTest {
     @Test
     @DisplayName("Should return salary")
     void validate_ReturnSalary() {
-        Assertions.assertEquals(mason.getSalary(),2000);
+        Assertions.assertEquals(2000, mason.getSalary());
     }
 }

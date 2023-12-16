@@ -7,10 +7,10 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
 
-public class MainTest {
+class MainTest {
 
     @Test
-    public void testPrintHelloWorld() {
+    void testPrintHelloWorld() {
         // Redirect System.out to capture the printed output
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
